@@ -1,0 +1,76 @@
+
+
+body, html { height: 100%; }  
+body{
+    background: url("Imagenes/fondo2.png") no-repeat;
+    background-size: 50% 50%;  
+    -webkit-background-size: 100% 130%; 
+    -moz-background-size: 50% 50%;  
+    -o-background-size: 50% 50%;
+    padding:20px;
+}
+
+p { 
+  font-weight: bold; 
+  font-style: italic;
+}
+
+td {
+  line-height: 75%;
+}
+
+PRE {
+	line-height: 120%;
+	font-size: 20px; 
+	font-family: arial, verdana, sans-serif;	color: #fcfcfb;
+	background-color: green;
+}
+
+h1{
+   font-size: 36; color: yellow;
+}
+
+
+h2 {
+color:white;
+font-style:italic;
+font-size:2.2em;
+font-family:'Helvetica','Verdana','Monaco',sans-serif;
+text-align:center;
+}
+	
+h3{
+	color:blue;
+}	
+
+h4{
+	font-size: 24; color:white;	 
+}	
+
+h5{
+	color:green;
+}	
+
+img#imagen_de_fondo {
+        /* Rellenamos el fondo */
+        min-height: 100%;
+        min-width: 800px;
+ 
+        /* Escalamiento proporcional */
+        width: 100%;
+        height: auto;
+ 
+        /* Posicionamiento */
+        position: fixed;
+        top: 0;
+        left: 0;
+}
+ 
+@media screen and (max-width: 800px) { /* Hacemos la búsqueda y si coincide modificamos las propiedades de la imagen */
+        img#imagen_de_fondo {
+                left: 50%;
+                margin-left: -400px;   /* Agregamos un margen negativo que represente el 50% */
+        }
+}
+
+
